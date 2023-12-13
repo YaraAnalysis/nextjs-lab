@@ -6,6 +6,16 @@ export default function Pessoa({ nome, idade}) {
             <br/>
             <b>Idade</b>: {idade}
             <br/>
+
+            {idade >= 18 ? (
+                <spam>Maior de idade</spam>
+            ) : (
+                <spam>Menor de idade</spam>
+            )
+            }
+
+            <br/>
+            <br/>
         </div>
     );
 }
